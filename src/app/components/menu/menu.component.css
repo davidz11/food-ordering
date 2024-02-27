@@ -1,0 +1,98 @@
+
+.app-container {
+ 
+    display: flex;
+    flex-direction: column;
+}
+
+.products__list {
+   
+    display: flex;
+    height: 140vh;
+    
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    margin-top: 11rem;
+    margin-left: 3rem;
+   align-items: center;
+   justify-content: center;
+    border: 1px solid white;
+    color: black !important;
+    width: 15rem;
+    height: 25rem;
+    font-size: 1rem;
+    background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+    opacity: 0.9;
+
+}
+
+
+.nav-link{
+    color: aliceblue;
+    border-radius: 10%;
+}
+
+.nav-link:hover{
+    background-color: black;
+}
+
+
+
+
+@media ( max-width: 1231px) {
+    
+    .products__list{
+        width: 100%;
+      
+       
+        font-size: 0.5rem;
+        
+    }
+   
+    
+}
+
+
+@media ( max-width: 925px) {
+    
+    .products__list{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        align-items: center;
+       height: 100%;
+    }
+ul{
+    width: 70%;
+    height: 10%;
+  justify-content: center;
+  
+}
+}
+@media (max-width: 767px){
+
+.products__list{
+    height: 160vh;
+}
+    .card{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    ul{
+       
+        font-size: x-small;
+      width: 18rem;
+      height: 8rem;
+
+
+    }
+    li button{
+text-align: start;   
+ }
+}

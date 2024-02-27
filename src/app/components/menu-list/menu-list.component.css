@@ -1,0 +1,119 @@
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+margin-top: 300px;
+margin-left: 30px;
+  gap: 30px;
+
+}
+.mdc-label{
+color: white;
+}
+form{
+    
+  position: absolute;
+  top: 144px;
+  left: 365px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: 1px solid white;
+ width: 500px;
+}
+.mat-mdc-checkbox label{
+  color: white;
+}
+.card{
+  background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+  opacity: 0.9;
+    border: 2px solid white;
+    gap: 20px;
+    
+}
+.card-body{
+  color: white;
+  
+}
+.rs__button{
+  display: none;
+}
+
+@media (max-width: 1231px) {
+  ul{
+    grid-template-columns: auto auto auto auto ;
+ 
+  }
+h5{
+  font-size: 0.6rem;
+}
+  .card{
+    width: 10rem !important;
+    height: 16rem;
+
+  }
+  .card-body{
+    display: flex;
+    flex-direction: row ;
+  justify-content: space-between;
+  }
+
+  .card__txt{
+    flex-direction: column;
+   
+  }
+  button{
+    display: none;
+ 
+  }
+
+  #rs{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+   float: right;
+  }
+
+}
+@media (max-width: 767px){
+  ul{
+    margin: 1rem;
+  
+  }
+  .rs__button{
+   display: flex;
+   margin-left: -25px;
+   margin-top: 0px;
+    width: 1.8rem;
+    height: 1.8rem;
+   margin-top: 1.8rem;
+  }
+
+ul{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+  .card__txt{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .card-title{
+letter-spacing: 0;
+width: 120px;
+  }
+  .card-text{
+    width: 50px;
+  }
+}

@@ -1,0 +1,67 @@
+
+
+.homepage__container img{
+   
+    width: 100%;
+    height: 100%;
+    background-image: cover;
+   
+}
+
+.homepage__container{
+    background-attachment:fixed ;
+    position: relative;
+   
+    text-align: center;
+    justify-content: center;
+}
+
+.homepage__txt{
+    width: 340px;
+    position: absolute;
+    top: 250px;
+    left: 241px;
+ align-self: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+}
+
+@media (max-width: 1231px) {
+    
+    .homepage__txt{
+       
+        flex-direction: column;
+     
+      display: flex;
+     
+      align-items: center;
+       font-size: 1.5vw;
+   width: 500px;
+    }
+   
+  
+ 
+    .btn{
+      width: 30vw;
+    }
+      .homepage__container{
+        height: 100%;
+        width: 100%;
+   
+      }
+
+    
+}
+
+@media ( max-width: 925px){
+
+
+}
+
+
+@media (min-width: 375){
+    
+}

@@ -1,0 +1,41 @@
+.text-center {
+    background-color: black;
+    color: white;
+    text-align: center;
+  
+}
+
+
+
+
+
+.card {
+    width: 70%;
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+   
+    position: relative;
+    bottom: 100px;
+  
+  
+}
+
+.card-header {
+    background-color: black;
+}
+
+footer{
+    height: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 1231px){
+footer{
+    display: none;
+}
+}

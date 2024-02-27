@@ -1,0 +1,42 @@
+
+ 
+
+<div class="cart__container">
+
+  <div class="cart__total">
+
+    <ul>
+     <li *ngFor="let product of productData">
+       {{product.product.name}} - quantity: {{product.quantity}} - total Price: {{product.quantity * product.product.price}}  ₾
+     </li>
+    </ul>
+     <p>{{cartTotalPrice }} ₾</p>
+     <button mat-raised-button (click)="orderAlert()" color="primary">Place order</button>
+   </div>
+
+<div *ngFor="let product of productData" class="card" style="width: 60rem; height: 10rem;">
+  <h5 class="card-title2">{{product.product.name}}</h5>
+  <img class="card-img-top" [src]="product.product.image" alt="Card image cap" style="width: 10rem;">
+ 
+  <div class="card-body">
+    <h5 class="card-title">{{product.product.name}}</h5>
+
+    <div class="cart__button">
+      <p class="card-text">{{product.price}} ₾</p>
+      <p> total: {{product.quantity * product.product.price}} </p>
+      <div class="cart__quantity">
+      <button class="btn" (click)="addQuantity(product)" mat-stroked-button color="warn">+</button>
+      <p>{{product.quantity}}</p>
+
+    <button (click)="minusQuantity(product)" mat-stroked-button color="warn">-</button>
+    <button  (click)="deleteButton(product.product.id)" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+
+      <mat-icon><i class="bi bi-trash"></i></mat-icon>
+    </button>
+  </div>
+  </div>
+
+  
+  </div>
+ 
+</div>

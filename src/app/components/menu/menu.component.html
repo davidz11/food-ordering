@@ -1,0 +1,23 @@
+
+
+
+
+<div class="products__list">
+
+
+  <ul class="nav flex-column">
+
+
+
+  
+    <li *ngFor="let category of menuData " class="nav-item">
+      <button (click)="clickHandler(category.id)" class="nav-link active" [ngClass]="{ active: category.id === (menuService.activeId | async)}" aria-current="page" href="#">{{category.name}}</button>
+    </li>
+    
+ 
+  
+  </ul>
+  
+  <app-menu-list></app-menu-list>
+</div>
+
